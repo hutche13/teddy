@@ -67,7 +67,7 @@ function hideElement(id) {
 
    							<h2 id="insert">Add a Comment</h2>
    							<label>Comment <input type=text name="comment"></label>
-							<input type="submit" name="insert" value="insert">
+							<input type="submit" name="insert" value="add comment">
    						</form>'; }
    						
    						else { echo '<h4>You must be logged in to add a comment</h4>';}
