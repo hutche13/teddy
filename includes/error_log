@@ -1,0 +1,17 @@
+[05-Jun-2014 15:31:26 America/Denver] PHP Warning:  include_once(db_connect.php): failed to open stream: No such file or directory in /home2/charloz6/public_html/teddy/includes/process_login.php on line 2
+[05-Jun-2014 15:31:26 America/Denver] PHP Warning:  include_once(): Failed opening 'db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/charloz6/public_html/teddy/includes/process_login.php on line 2
+[05-Jun-2014 15:31:26 America/Denver] PHP Parse error:  syntax error, unexpected end of file in /home2/charloz6/public_html/teddy/includes/functions.php on line 197
+[07-Jun-2014 17:56:23 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/charloz6/public_html/teddy/includes/process_login.php on line 4
+[07-Jun-2014 17:57:50 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/charloz6/public_html/teddy/includes/process_login.php on line 4
+[07-Jun-2014 18:04:41 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/charloz6/public_html/teddy/includes/process_login.php on line 4
+[07-Jun-2014 18:05:35 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/charloz6/public_html/teddy/includes/process_login.php on line 4
+[07-Jun-2014 18:05:38 America/Denver] PHP Warning:  include_once(includes/functions.php): failed to open stream: No such file or directory in /home2/charloz6/public_html/teddy/includes/logout.php on line 2
+[07-Jun-2014 18:05:38 America/Denver] PHP Warning:  include_once(): Failed opening 'includes/functions.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/charloz6/public_html/teddy/includes/logout.php on line 2
+[07-Jun-2014 18:05:38 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/charloz6/public_html/teddy/includes/logout.php on line 3
+[07-Jun-2014 18:13:20 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/charloz6/public_html/teddy/includes/process_login.php on line 4
+[10-Jun-2014 12:16:17 America/Denver] PHP Warning:  include_once(includes/functions.php): failed to open stream: No such file or directory in /home2/charloz6/public_html/teddy/includes/logout.php on line 2
+[10-Jun-2014 12:16:17 America/Denver] PHP Warning:  include_once(): Failed opening 'includes/functions.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home2/charloz6/public_html/teddy/includes/logout.php on line 2
+[10-Jun-2014 12:16:17 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/charloz6/public_html/teddy/includes/logout.php on line 3
+[10-Jun-2014 12:26:02 America/Denver] PHP Fatal error:  Call to undefined function sec_session_start() in /home2/charloz6/public_html/teddy/includes/process_login.php on line 4
+[10-Jun-2014 12:27:59 America/Denver] PHP Notice:  Undefined variable: mysqli in /home2/charloz6/public_html/teddy/includes/process_login.php on line 11
+[10-Jun-2014 12:27:59 America/Denver] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/charloz6/public_html/teddy/includes/functions.php on line 33
