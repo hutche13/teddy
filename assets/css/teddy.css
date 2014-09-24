@@ -1,42 +1,39 @@
 body {
-background-image:url('snowbank.png');
-background-size:100%;
-background-position:25% -5%;
+  background-image: url('snowbank.png');
+  background-size: 100%;
+  background-position: 25% -5%;
 }
-
-
-
-
 .content {
-	margin-top:50px;
-	margin-bottom:100px;
-	
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-.content ul li figure  {
-	width:100%;
-	margin:0;
-	position:relative;
+.content ul {
+  margin-left: -40px;
 }
-
+.content ul li {
+  list-style-type: none;
+}
+.content ul li figure {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+.content ul li figure img {
+  width: 100%;
+}
 .content ul li figure img:hover {
-	opacity:0.3;
+  opacity: 0.3;
 }
-
 .content ul li figure figcaption {
-	background:rgba(0,0,0,0.7);
-	color:white;
-	height:auto;
-	bottom:0;
-	display:block;
-	width:100%;
-	position:absolute;
-	
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  height: auto;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  position: absolute;
 }
-
-
-
 .content ul li figure figcaption a {
-	color:white;
-	
+  color: white;
+  margin: 5px 5px;
 }

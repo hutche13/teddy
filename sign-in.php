@@ -35,9 +35,10 @@
 	
 	<?php include 'header.php';?>
 	
-	<div class="row-fluid">
-		<div class="span4 offset4">
-			<div class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+				<div class="content">
 				 <?php
          /***
             See if the user has already signed in, by looking in the
@@ -137,7 +138,8 @@
 					</div>
 				</div>
 			</div>
-	
+	</div>
+</div>
 		</body>
 
 </html>

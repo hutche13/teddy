@@ -1,3 +1,15 @@
+<?php
+include_once 'includes/db_connect.php';
+include_once 'includes/functions.php';
+ 
+sec_session_start();
+ 
+if (login_check($mysqli) == true) {
+    $logged = 'in';
+} else {
+    $logged = 'out';
+}
+?>
 <!DOCTYPE html>
 
 	<head><?php include 'head.php';?></head>
@@ -28,78 +40,82 @@ function hideElement(id) {
          dalConnectToDatabase($dalConfiguration);
 	?>
 	
+	
 	<?php include 'header.php';?>
 		
 		
-		<div class="row-fluid">
+		<div class="container">	
+			<div class="row">
 		
 			
-			<div class="span4 offset1">		
-				<div class="content">	
+				<div class="col-xs-10 col-sm-5 col-md-5">		
+					<div class="content">	
 					<img src="assets/img/teddyday1.png">
 				</div>
 				
 			</div>
 			
-			<div class="span4">
-				<div class="content">
+			<div class="col-xs-10 col-sm-5 col-md-5 col-md-offset-1">
+								<div class="content">
+									<a href="#" onclick="showElement('commentform')">Show Comments</a>
+									<a href="#" onclick="hideElement('commentform')">Hide Comments</a>
 				
-				
-     	 			<a href="#" onclick="showElement('commentform')">Show Comments Form</a>
-				<div id="commentform">
-  				 <form " action="#insert" method="POST">
-  				 
-   					<a href="#" onclick="hideElement('commentform')">Hide Comments Form</a>
-   					<h2 id="insert">Add</h2>
-      					<label>Comment <input type=text name="comment"></label>
+									<div id="commentform">
+				  						<?php 
+									if (login_check($mysqli) == true) {
+									echo '	
+									<div id="commentform">
+				  						<form action="#insert" method="POST">
 
-      					<input type="submit" name="insert" value="insert">
-   				</form>
+				   							<h2 id="insert">Add a Comment</h2>
+				   							<label>Comment <input type=text name="comment"></label>
+											<input type="submit" name="insert" value="add comment">
+				   						</form>'; }
+   						
+				   						else { echo '<h4>You must be logged in to add a comment</h4>';}
+				   						 ?>
+   						
+   						
+   				
 
-   			<?php if (isset($_POST['insert'])): ?>
+				   			<?php if (isset($_POST['insert'])): ?>
 
-      			<h2>Results</h2>
-      			<?php
+				      			<?php
        	  			
-         			$title = $_POST['title'];
-         			$body = $_POST['body'];
+				         			$comment = $_POST['comment'];
          			
-         			$newcomment = array(
-            				'table'     => 'comments3',
-            					'values'    => array(
-               						
-               						'title'     => $title,
-               						'body' => $body
-            					)
-         				);
+				         			$newcomment = array(
+				            				'table'     => 'teddy3',
+				            					'values'    => array(
+				               					'comment' => $comment
+				            					)
+				         				);
          				
-         				if (isset($_POST['pubdate'])) {
-            					$newcomment['values']['pubdate'] = $_POST['pubdate'];
-         				}
+				         				if (isset($_POST['pubdate'])) {
+				            					$newcomment['values']['pubdate'] = $_POST['pubdate'];
+				         				}
          				
-         				$newid = dalAdd($newcomment);
-      			?>
-<p>Inserted <i><?php echo $title ?></i><br/><?php echo $body ?>.</p>
+				         				$newid = dalAdd($newcomment);
+				      			?>
 			 
       			
       
 
-   			<?php endif; ?>
-<?php
-         			$getAllComments = array(
-            				'table' => 'comments3'
-         			);
-         			$rows = dalRetrieveAll($getAllComments);
-         				foreach ($rows['dalAllRows'] as $row) {
-            					$title = $row['title'];
-            					$body = $row['body'];
-           					$id = $row['id'];
+				   			<?php endif; ?>
+				<?php
+				         			$getAllComments = array(
+				            				'table' => 'teddy3'
+				         			);
+				         			$rows = dalRetrieveAll($getAllComments);
+				         				foreach ($rows['dalAllRows'] as $row) {
+				            					$body = $row['comment'];
+				           					$id = $row['id'];
            
-            echo "<p>${row['id']} <i>${row['title']}</i><br/>${row['body']}</p>\n";
-         				}
+				            echo "<p>${row['id']} ${row['comment']}</p>\n";
+				         				}
          
-      			?>
-      			</div>
+				      			?>
+				      			</div>
 				</div>
 				
 				

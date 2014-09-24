@@ -33,9 +33,10 @@ function hideElement(id) {
 	?>
 	<?php include 'header.php';?>
 	
-	<div class="row-fluid">
-		<div class="span4 offset4">
-			<div class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+				<div class="content">
 				 
         				   <a href="sign-in.php">Already Have an Account?</a>
 
@@ -94,7 +95,7 @@ function hideElement(id) {
 			</div>
 		</div>
 	</div>
-	
+</div>
 	
 	
 </body>
