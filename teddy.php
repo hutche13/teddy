@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 	<head>
-	<?php include 'head.php';?>
+		<?php include 'head.php';?>
 		<link rel="stylesheet" href="assets/css/teddy.css">
 
-</head>
-<body>
+	</head>
+	<body>
 		<?php include 'header.php';?>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="content">
-					
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="content">
 						<div class="row">
 							<ul class="unstyled">
 								<div class="col-xs-4 col-sm-4 col-md-4">
@@ -50,16 +49,12 @@
 										</figure>
 									</li>
 								</div>
-							
 							</ul>
 						</div>
-						
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	
-</body>
+	</body>
 
 </html>

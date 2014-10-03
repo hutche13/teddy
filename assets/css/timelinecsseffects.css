@@ -1,0 +1,76 @@
+html {
+  background: black;
+}
+.container-fluid {
+  background: black;
+}
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+img.bw {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+img.bw:hover {
+  -webkit-filter: grayscale(0%);
+}
+figure {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 991px) {
+  figure {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  figure {
+    width: 200px;
+    height: 200px;
+  }
+}
+figure img.grow {
+  width: 250px;
+  height: 250px;
+  margin-top: 25px;
+  border: 5px solid white;
+  border-radius: 150px;
+}
+@media (max-width: 991px) {
+  figure img.grow {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  figure img.grow {
+    width: 150px;
+    height: 150px;
+  }
+}
+figure img.grow:hover {
+  width: 300px;
+  height: 300px;
+  margin-top: 0px;
+  border: 5px solid white;
+  border-radius: 180px;
+}
+@media (max-width: 991px) {
+  figure img.grow:hover {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  figure img.grow:hover {
+    width: 200px;
+    height: 200px;
+  }
+}
