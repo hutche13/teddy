@@ -42,7 +42,7 @@
 	
 		<?php include 'header.php';?>
 		
-		<div class="container-fluid">	
+		<div class="container">	
 			<div class="row">
 				<div class="col-xs-10 col-sm-5 col-md-5">		
 					<div class="content">	
