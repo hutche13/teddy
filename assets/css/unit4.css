@@ -6,12 +6,14 @@ body {
 header {
   background: #000;
   height: 100px;
+  width: 100%;
 }
 header img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
+  max-width: 90%;
 }
 header span a {
   font-family: "Mensch", sans-serif;
