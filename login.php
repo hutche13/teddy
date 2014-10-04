@@ -41,8 +41,8 @@ if (login_check($mysqli) == true) {
 	
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-				<div class="content">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<div class="content login">
 			
 				<?php
 					if (isset($_GET['error'])) {
@@ -56,10 +56,16 @@ if (login_check($mysqli) == true) {
     						  <p>If you are done, please <a href="includes/logout.php">log out</a>.</p>';
 					} else {
 						echo '<form action="includes/process_login.php" method="post" name="login_form">                      
-								Email: <input type="text" name="email" />
-								Password: <input type="password" name="password" id="password"/>
+							<div class="row">	
+								<div class="col-xs-10 col-sm-10 col-md-8">
+								Email:<br> <input type="text" name="email" />
+								</div>
+								<div class="col-xs-10 col-sm-10 col-md-8">
+								Password:<br> <input type="password" name="password" id="password"/>
 			              		<input type="button" value="Login" onclick="formhash(this.form, this.form.password);" /> 
-			          		  </form>
+								</div>
+			          		 </div>
+							  </form>
 			           
 					   <p>If you do not have a login, please <a href="register.php">register</a></p>';
 				   }
