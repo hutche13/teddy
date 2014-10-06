@@ -26,14 +26,7 @@
 
 
 	<body>
-		<?php
-			require_once "data-access-configuration.inc.php";
-			require_once "data-access-layer.inc.php";
-	    
-		?>
-		<?php
-        	dalConnectToDatabase($dalConfiguration);
-		?>
+		
 		<!--header-->
 		<?php include 'header.php';?>
 	
