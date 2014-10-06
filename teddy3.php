@@ -14,7 +14,7 @@
 
 	<head>
 		<?php include 'head.php';?>
-	</head>
+
 
 
 	<script type="text/javascript">
@@ -30,7 +30,7 @@
       	}
 
 	</script>
-
+	</head>
 	<body>
 		<?php
 			require_once "data-access-configuration.inc.php";

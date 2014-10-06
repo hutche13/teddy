@@ -17,7 +17,7 @@ if (login_check($mysqli) == true) {
 	<?php include 'head.php';?>
 	<script type="text/JavaScript" src="js/sha512.js"></script> 
 	<script type="text/JavaScript" src="js/forms.js"></script>
-</head>
+
 
 <script type="text/javascript">
 	function hideElement(id) {
@@ -33,7 +33,7 @@ if (login_check($mysqli) == true) {
 	  }
 
 </script>
-
+</head>
 
 <body>
 	

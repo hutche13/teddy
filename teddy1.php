@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 
 	<head>
-		<?php include 'head.php';?></head>
+		<?php include 'head.php';?>
 		
 		<script type="text/javascript">
 			function hideElement(id) {
@@ -29,7 +29,7 @@
       	  	}
 
 		</script>
-
+</head>
 		<body>
 			<?php
 				require_once "data-access-configuration.inc.php";

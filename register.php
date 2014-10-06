@@ -7,7 +7,7 @@
 		<?php include 'head.php';?>
     	<script type="text/JavaScript" src="js/sha512.js"></script> 
 		<script type="text/JavaScript" src="js/forms.js"></script>
-	</head>
+	
 	<script type="text/javascript">
 		function hideElement(id) {
         	var elem = document.getElementById(id);
@@ -23,7 +23,7 @@
 
 	</script>
 
-
+</head>
 
 	<body>
 		

@@ -13,8 +13,8 @@
 					<div class="content">
 						<div class="row">
 							<ul class="unstyled">
-								<div class="col-xs-4 col-sm-4 col-md-4">
-									<li>
+								<li>
+									<div class="col-xs-4 col-sm-4 col-md-4">
 										<figure>
 											<img src="assets/img/teddyvet.png">
 											<figcaption>
@@ -23,10 +23,10 @@
 												</a>
 											</figcaption>
 										</figure>
-									</li>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4">
-									<li>
+									</div>
+								</li>
+								<li>
+									<div class="col-xs-4 col-sm-4 col-md-4">
 										<figure>
 											<img src="assets/img/teddysleepwork.png">
 											<figcaption>
@@ -35,10 +35,10 @@
 												</a>
 											</figcaption>
 										</figure>
-									</li>
-								</div>
-								<div class="col-xs-4 col-sm-4 col-md-4">
-									<li>
+									</div>
+								</li>
+								<li>
+									<div class="col-xs-4 col-sm-4 col-md-4">
 										<figure>
 											<img src="assets/img/teddyday1.png">
 											<figcaption>
@@ -47,8 +47,8 @@
 												</a>
 											</figcaption>
 										</figure>
-									</li>
-								</div>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
